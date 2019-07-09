@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Kho vật tư | Sachi Tay Nguyen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Favicon -->
+  <!-- <link rel="shortcut icon" href="assets/img/favicon.ico"> -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/libs/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/libs/slick/slick.css">
+  <!-- Theme Styles -->
+  <link href="assets/css/main.css?v=0417" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="site-wrapper">
+   <!-- Site Header -->
+    <header id="siteHeader" class="site-header site-header--minimal">
+      <div class="site-header__wrapper-bg h-bg-cover" style="background-image: url('assets/img/sachi-02.jpg');">
+        <div class="site-header__wrapper-opacity">
+          <div class="site-header__top-action">
+            <div class="single-action">
+              <div class="dropdown dropdown--lang">
+                <a href="#" class="single-action__button btn-flag-languages" data-toggle="dropdown"><img src="assets/img/vn.png" class="country-flag">Tiếng Việt <i class="ion-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><img src="assets/img/us.png" class="country-flag">English (US)</a></li>
+                  <li><a href="#"><img src="assets/img/cn.png" class="country-flag">Chinese</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="single-action">
+              <a href="" class="single-action__button"><i class="ion-log-in"></i> Đăng nhập</a>
+            </div>
+          </div>
+          <div class="container">
+            <div class="site-header__top">
+              <div class="site-header__logo">
+                <a href="#"><img src="assets/img/logo.png" alt="Sachi Logo"></a>
+              </div>
+              <div class="site-header__toggle hidden-sm hidden-md hidden-lg">
+                <a href="#" class="btn-toggle-list-nav js-btn-toggle-list-nav"><i class="ion-navicon"></i></a>
+              </div>
+            </div>
+            <div class="site-header__nav js-site-header__nav">
+              <ul class="list-header-nav ">
+                <li><a href="#">Giới thiệu</a></li>
+                <li class="item-empty"></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Nhà máy</a></li>
+                <li class="item-empty"></li>
+                <li><a href="#">Vùng trồng</a></li>
+                <li><a href="#">Kỹ thuật</a></li>
+                <li><a href="#">Vật tư</a></li>
+                <li><a href="#">Cây giống</a></li>
+                <li><a href="#">Chứng nhận</a></li>
+                <li><a href="#">Hợp tác</a></li>
+                <li><a href="#">Tin tức</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END Site Header -->
+      
+    <!-- Site Content -->
+    <div class="site-content">
+      <div class="breadcrumb-wrapper">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Kho vật tư</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="container">
+        <div class="c-categorybar">
+          
+          <div class="c-categorybar__top">
+            <a href="#" id="Toggle__Search" class="c-categorybar__toggle" data-toggle="collapse">
+              <i class="toggle-icon toggle-icon--search ion-search"></i>
+            </a>
+            <div class="toggle-search hidden">
+              <input type="#" class="search-input" placeholder="Tìm kiếm vật tư">
+            </div>
+            <div class="toggle-label">Danh mục vật tư</div>
+            <a href="#Collapse__ProductCategory" class="c-categorybar__toggle" data-toggle="collapse">
+              <i class="toggle-icon toggle-icon--menu ion-navicon-round"></i>
+            </a>
+            <ul class="list-search-suggested">
+              <li><a href="#">Bò <span class="search-keyword-hl">sữa</span> Gia Lai</a></li>
+              <li><a href="#"><span class="search-keyword-hl">Sữa</span> bò <span class="search-keyword-hl">tươi</span> cao nguyên Lâm Đồng</a></li>
+              <li><a href="#"><span class="search-keyword-hl">Sữa tươi</span> chính hiệu nhập khẩu từ châu Âu</a></li>
+              <li><a href="#"><span class="search-keyword-hl">Sữa</span> dê</a></li>
+              <li><a href="#"><span class="search-keyword-hl">Sữa</span> chua</a></li>
+              <li><a href="#"><span class="search-keyword-hl">Sữa</span> chua</a></li>
+              <li><a href="#"><span class="search-keyword-hl">Sữa</span> chua</a></li>
+            </ul>
+          </div>
+          
+          <div id="Collapse__ProductCategory" class="collapse">
+            <ul class="c-categorybar__list list-unstyled">
+              <li><a href="#">Danh mục 01</a></li>
+              <li><a href="#">Danh mục 02</a></li>
+              <li><a href="#">Danh mục 03</a></li>
+              <li><a href="#">Danh mục 04</a></li>
+              <li><a href="#">Danh mục 05</a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="c-list-products">
+          <div class="c-product-detail__title-sm">Kho vật tư</div>
+          <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="c-card c-card--product">
+                <a href="#" class="single-product">
+                  <div class="single-product__image">
+                    <div class="h-rectangle">
+                      <div class="h-rectangle__inner">
+                        <img src="assets/img/sachi-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-product__content">
+                    <div class="single-product__title">Tiêu đều cho vật tư Saca Inchi</div>
+                    <div class="single-product__code">Mã: DIEK523480</div>
+                    <div class="single-product__price">123.000đ</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="c-card c-card--product">
+                <a href="#" class="single-product">
+                  <div class="single-product__image">
+                    <div class="h-rectangle">
+                      <div class="h-rectangle__inner">
+                        <img src="assets/img/sachi-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-product__content">
+                    <div class="single-product__title">Tiêu đều cho vật tư Saca Inchi</div>
+                    <div class="single-product__code">Mã: DIEK523480</div>
+                    <div class="single-product__price">123.000đ / kg</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="c-card c-card--product">
+                <a href="#" class="single-product">
+                  <div class="single-product__image">
+                    <div class="h-rectangle">
+                      <div class="h-rectangle__inner">
+                        <img src="assets/img/sachi-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-product__content">
+                    <div class="single-product__title">Tiêu đều cho vật tư Saca Inchi</div>
+                    <div class="single-product__code">Mã: DIEK523480</div>
+                    <div class="single-product__price">123.000đ / kg</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="c-card c-card--product">
+                <a href="#" class="single-product">
+                  <div class="single-product__image">
+                    <div class="h-rectangle">
+                      <div class="h-rectangle__inner">
+                        <img src="assets/img/sachi-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-product__content">
+                    <div class="single-product__title">Tiêu đều cho vật tư Saca Inchi</div>
+                    <div class="single-product__code">Mã: DIEK523480</div>
+                    <div class="single-product__price">123.000đ / kg</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="c-card c-card--product">
+                <a href="#" class="single-product">
+                  <div class="single-product__image">
+                    <div class="h-rectangle">
+                      <div class="h-rectangle__inner">
+                        <img src="assets/img/sachi-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-product__content">
+                    <div class="single-product__title">Tiêu đều cho vật tư Saca Inchi</div>
+                    <div class="single-product__code">Mã: <b>DIEK523480</b></div>
+                    <div class="single-product__price">123.000đ / kg</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="c-card c-card--product">
+                <a href="#" class="single-product">
+                  <div class="single-product__image">
+                    <div class="h-rectangle">
+                      <div class="h-rectangle__inner">
+                        <img src="assets/img/sachi-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-product__content">
+                    <div class="single-product__title">Tiêu đều cho vật tư Saca Inchi</div>
+                    <div class="single-product__code">Mã: DIEK523480</div>
+                    <div class="single-product__price">123.000đ / kg</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-more-products">
+          <div class="text-center"><a href="#" class="btn-see-more btn">Xem thêm vật tư</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- END Site Content -->
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="site-footer__info">
+        <div class="container">
+          <div class="footer-copyright">
+            <span>Công ty cổ phần thương mại Sachi Tây Nguyên</span>
+            <span>Nhà máy tại: Thôn Đức An – Thuận An – ĐăkMil – Đăknong</span>
+            <span class="h-nowrap">SĐT: 094 3765 858</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Site Footer -->
+      
+  </div>
+
+
+
+  <!-- JS -->
+  <script src="assets/libs/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+  <script src="assets/libs/fancybox/jquery.fancybox.min.js"></script>
+  <script src="assets/libs/slick/slick.js"></script>
+
+  <!-- Theme Script -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    $('#Toggle__Search').on('click', function(e){
+        e.preventDefault();
+        $(this).parent().find('.toggle-search').toggleClass('hidden');
+        $(this).parent().find('.toggle-label').toggleClass('hidden');
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+.home-banner{
+  margin: 12px 0;
+}
+
+.home-section-wrapper{
+	padding: 24px 0;
+	@media (min-width: 768px){
+		padding: 36px 0;
+	}
+	&--bg-grey-01{
+		background-color: #fafafa;
+	}
+	&--bg-grey-02{
+		background-color: #fcfcfc;
+	}
+}
+
+.home-section{
+	$s: &;
+	// margin: 24px 0 28px;
+	// @media (min-width: 768px){
+	// 	margin: 48px 0 56px;
+	// }
+	// &:last-child{
+	// 	margin-bottom: 96px;
+	// }
+	&__header{
+		// display: flex;
+		// align-items: center;
+		justify-content: center;
+		margin: 0 0 16px;
+		padding: 0 8px 12px;
+		position: relative;
+		text-align: center;
+		@media (min-width: 768px){
+			margin: 0 0 24px;
+			padding: 0 12px 16px;
+		}
+
+		&:after{
+			content: "";
+			display: block;
+			height: 3px;
+			width: 64px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -32px;
+			background-color: rgba($color-s,.6);
+		}
+	}
+	&__title{
+		margin: 0;
+		font-family: $ff-avo;
+		font-size: 20px;
+		font-weight: 400;
+		color: #333;
+		@media (min-width: 768px){
+			font-size: 28px;
+		}
+	}
+	&__subtitle{
+		margin: 8px 0 0;
+		font-size: 12px;
+		color: #777;
+		@media (min-width: 768px){
+			font-size: 14px;
+		}
+	}
+	&__action{
+		font-size: 14px;
+		margin: 0 -4px;
+		a{
+			color: $color-m;
+			display: inline-block;
+			vertical-align: top;
+			padding: 4px;
+		}
+	}
+	&__footer{
+		margin: 12px 0 0;
+	}
+
+	// 
+	&--featured-users,
+	&--advisors{
+		.c-slider{
+			padding: 0 16px;
+			@include one-line-ellipsis();
+			@media (min-width: 768px){
+				padding: 0 24px;
+			}
+		}
+	}
+	&--brands,
+	&--plant-areas{
+		.c-slick{
+			padding-bottom: 20px;
+		}
+		.slick-dots{
+			bottom: -8px;
+			li{
+				button{
+					width: 8px;
+					height: 8px;
+				}
+			}
+		}
+	}
+}
+

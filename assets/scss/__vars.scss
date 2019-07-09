@@ -1,0 +1,60 @@
+@font-face {
+  src: url('../fonts/aristote.ttf');
+  font-family: Aristote;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url('../fonts/avo.ttf');
+  font-family: Avo;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url('../fonts/avo-italic.ttf');
+  font-family: Avo;
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url('../fonts/avo-bold.ttf');
+  font-family: Avo;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  src: url('../fonts/avo-bold-italic.ttf');
+  font-family: Avo;
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  src: url('../fonts/every-movie-every-night.ttf');
+  font-family: Emen;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Charm:400,700&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i&display=swap&subset=vietnamese');
+
+$ff-aristote: 'Aristote', 'Roboto', Arial, san-serif;
+$ff-avo:      'Avo','Roboto', Arial, san-serif;
+$ff-emen:     'Emen','Roboto', Arial, san-serif;
+$ff-charm:    'Charm','Roboto', cursive;
+
+$ff-roboto:   'Roboto', Arial, san-serif;
+
+$color-m: #55766f;
+$color-s: #998250;
+
+$grey50:  #FAFAFA;
+$grey100: #F5F5F5;
+$grey200: #EEEEEE;
+$grey300: #E0E0E0;
+$grey400: #BDBDBD;
+$grey500: #9E9E9E;
+$grey600: #757575;
+$grey700: #616161;
+$grey800: #424242;
+$grey900: #212121;

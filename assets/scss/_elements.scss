@@ -1,0 +1,65 @@
+.c-page-header{
+  padding-bottom: 24px;
+  margin: 28px 0; 
+  text-align: center;
+  position: relative;
+  &__title{   
+    margin: 0;
+    font-family: $ff-avo;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333;
+    @media (min-width: 768px){
+      font-size: 28px;
+    }
+  }
+  &:after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -40px;
+    background-color: rgba($color-s,.6);
+  }
+}
+
+
+.btn-see-more{
+  border-color: #ccc;
+  background-color: #fff;
+  color: $color-m;
+  font-size: 22px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 20px;
+  &.btn-lg{
+    border-radius: 26px;
+  }
+}
+.btn{
+  border-radius: 12px;
+  &-default{
+    border-color: #e0e0e0;
+  }
+  &-primary{
+    background-color: $color-s;
+    border-color: transparent;
+    &:hover{
+      background-color: darken($color-s, 3%);
+      border-color: transparent;
+    }
+    &:active{
+      background-color: darken($color-s, 5%);
+      border-color: transparent;
+    }
+    &:focus{
+      background-color: $color-s;
+      border-color: transparent;
+    }
+  }
+}

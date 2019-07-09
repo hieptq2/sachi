@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Thêm nhật ký | Sachi Tay Nguyen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico"> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick.css">
+    <!-- Theme Styles -->
+    <link href="assets/css/main.css?v=1212331231" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- Site Header -->
+      <header id="siteHeader" class="site-header site-header--minimal">
+        <div class="site-header__wrapper-bg h-bg-cover" style="background-image: url('assets/img/sachi-02.jpg');">
+          <div class="site-header__wrapper-opacity">
+            <div class="container">
+              <div class="site-header__top">
+                <div class="site-header__logo">
+                  <a href="#"><img src="assets/img/logo.png" alt="Sachi Logo"></a>
+                </div>
+                <div class="site-header__toggle hidden-sm hidden-md hidden-lg">
+                  <a href="#" class="btn-toggle-list-nav js-btn-toggle-list-nav"><i class="ion-navicon"></i></a>
+                </div>
+              </div>
+              <div class="site-header__nav js-site-header__nav">
+                <ul class="list-header-nav ">
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li class="item-empty"></li>
+                  <li><a href="#">Sản phẩm</a></li>
+                  <li><a href="#">Nhà máy</a></li>
+                  <li class="item-empty"></li>
+                  <li><a href="#">Vùng trồng</a></li>
+                  <li><a href="#">Kỹ thuật</a></li>
+                  <li><a href="#">Vật tư</a></li>
+                  <li><a href="#">Cây giống</a></li>
+                  <li><a href="#">Chứng nhận</a></li>
+                  <li><a href="#">Hợp tác</a></li>
+                  <li><a href="#">Tin tức</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- END Site Header -->
+      <!-- Site Content -->
+      <div class="site-content">
+        <div class="c-single-post">
+          <div class="container">
+            <div class="l-add-log">
+              <h1 class="post-title">Thêm nhật ký</h1>
+              <div class="post-meta">Tạo mới nhật kí sản xuất bằng cách điền các phần dưới đây</div>
+              <hr>
+              <div class="post-content">
+                <form>
+                  <div class="form-group">
+                    <label>Tên công việc</label>
+                    <div class="flex flex-ai-center">
+                      <div class="flex-item-dw pos-rel">
+                        <input type="text" class="form-control input-lg" placeholder="Điền tiêu đề cho công việc">
+                        <ul class="list-kw-suggested hidden">
+                          <li><a href="#"><span class="search-keyword-hl">Tiêu</span> đề gợi ý</a></li>
+                          <li><a href="#"><span class="search-keyword-hl">Tiêu</span> đề gợi ý</a></li>
+                          <li><a href="#"><span class="search-keyword-hl">Tiêu</span> đề gợi ý</a></li>
+                        </ul>
+                      </div>
+                      <div class="flex-item-tw h-ml-2">
+                        <a href="#Modal__TitleTemplates" data-toggle="modal" class="form-control--link"><i class="ion-navicon-round"></i></a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="form-group">
+                    <label>Chi tiết công việc</label>
+                    <textarea class="form-control input-lg" rows="5" placeholder="- Quy trình bảo quản thực phẩm &#10;- Điều kiện, phương pháp bảo quản sản phẩm&#10;- Chụp hình ảnh hoặc quay video khu vực"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <div class="flex">
+                      <div class="flex-item-dw">
+                        <label class="my-0">Mã truy xuất liên quan</label>
+                      </div>
+                      <div class="flex-item-tw">
+                        <a href="#Modal__ProductSearch" class="h-d-block" data-toggle="modal"><img src="assets/img/add-image.png" width="48px" alt="Add"></a>
+                      </div>
+                    </div>
+                    <div class="list-product-info">
+                      <div class="single-product-info">
+                        <div class="info__content">
+                          <div class="info-title">Tên sản phẩm</div>
+                          <div class="info-subtitle">Mã: 204t0sd9fi0</div>
+                        </div>
+                        <div class="info__action">
+                          <a href="#" class="action-delete"><i class="ion-close-round"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="log-add-users flex flex-ai-center ">
+                      <div class="flex-item-dw">
+                        <label class="my-0">Người liên quan</label>
+                      </div>
+                      <div class="flex-item-tw">
+                        <a href="#Modal__SelectUsers" class="h-d-block" data-toggle="modal"><img src="assets/img/add-user.png" width="48px" alt="Add"></a>
+                      </div>
+                    </div>
+                    <div class="l-list-users l-list-users--in-form">
+                      <div class="single-user">
+                        <div class="single-user__link" data-toggle="modal">
+                          <div class="single-user__avatar">
+                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                          </div>
+                          <div class="single-user__info">
+                            <div class="single-user__title">Nguyễn Thị Cam</div>
+                            <div class="single-user__subtitle">Hộ nuôi</div>
+                          </div>
+                          <div class="single-user__action">
+                            <a href="#" class="action-delete"><i class="ion-close-round"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="single-user">
+                        <div class="single-user__link">
+                          <div class="single-user__avatar">
+                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/sdw/128.jpg" alt="">
+                          </div>
+                          <div class="single-user__info">
+                            <div class="single-user__title">Bùi Đức Hà</div>
+                            <div class="single-user__subtitle">Quản lý</div>
+                          </div>
+                          <div class="single-user__action">
+                            <a href="#" class="action-delete"><i class="ion-close-round"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="log-add-users flex flex-ai-center ">
+                      <div class="flex-item-dw">
+                        <label class="my-0">Đính kèm</label>
+                      </div>
+                      <div class="flex-item-tw">
+                        <label class="my-0"><input type="file" class="hidden"><img src="assets/img/add-folder.png" width="48px" alt="Add"></label>
+                      </div>
+                    </div>
+                    <div class="list-uploaded-files mt-2">
+                      <div class="data__images">
+                        <div class="single-image"><a href="https://cdn.stocksnap.io/img-thumbs/960w/JKL8K7OBGX.jpg" data-fancybox="product-log-gallery-01"><img src="https://cdn.stocksnap.io/img-thumbs/960w/JKL8K7OBGX.jpg" alt=""></a>
+                          <a href="#" class="single-image__delete"><i class="ion-close"></i></a>
+                        </div>
+                        <div class="single-image"><a href="https://cdn.stocksnap.io/img-thumbs/960w/GD3RFDBLXX.jpg" data-fancybox="product-log-gallery-01"><img src="https://cdn.stocksnap.io/img-thumbs/960w/GD3RFDBLXX.jpg" alt=""></a>
+                          <a href="#" class="single-image__delete"><i class="ion-close"></i></a>
+                        </div>
+                        <div class="single-image"><a href="https://cdn.stocksnap.io/img-thumbs/960w/8EJ9RGJB5P.jpg" data-fancybox="product-log-gallery-01"><img src="https://cdn.stocksnap.io/img-thumbs/960w/8EJ9RGJB5P.jpg" alt=""></a>
+                          <a href="#" class="single-image__delete"><i class="ion-close"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Thêm mới nhật ký</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-sachi mt-2 mb-4">
+          <div class="container">
+            <div class="section-produce-logs">
+              <div class="clearfix">
+                <div>
+                  <h3 class="mt-0 mb-2 h-ff-emen">Các nhật kí trước đây</h3>
+                  <p>Các chi tiết và cập nhật về sản xuất của bạn</p>
+                </div>
+                <div class="product-logs my-4">
+                  <div class="single-product-log">
+                    <div class="log__user-avatar"><img src="https://cdn.stocksnap.io/img-thumbs/280h/6FMI2J6JKC.jpg" alt=""></div>
+                    <div class="log__main-content">
+                      <div class="log__user-info">
+                        <span class="log__user-info__title">Lê Đại Dương</span>
+                        <span>-</span>
+                        <span class="log__user-info__meta">08/10/2018, 11:30:30</span>
+                      </div>
+                      <div class="log__meta-info">
+                        <i class="info-icon ion-location mr-8"></i>
+                        <div class="info-data">Địa chỉ: Sô 12, ngõ 12, đường Giải Phóng, quận Đống Đa, TP. Hà Nội</div>
+                      </div>
+                      <div class="log__data">
+                        <div class="single-data"><u>Công việc:</u> Thu hoạch cây trồng</div>
+                        <div class="single-data"><u>Chi tiết:</u> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</div>
+                        <div class="data__images">
+                          <div class="single-image"><a href="https://cdn.stocksnap.io/img-thumbs/960w/JKL8K7OBGX.jpg" data-fancybox="product-log-gallery-01"><img src="https://cdn.stocksnap.io/img-thumbs/960w/JKL8K7OBGX.jpg" alt=""></a></div>
+                          <div class="single-image"><a href="https://cdn.stocksnap.io/img-thumbs/960w/GD3RFDBLXX.jpg" data-fancybox="product-log-gallery-01"><img src="https://cdn.stocksnap.io/img-thumbs/960w/GD3RFDBLXX.jpg" alt=""></a></div>
+                          <div class="single-image"><a href="https://cdn.stocksnap.io/img-thumbs/960w/8EJ9RGJB5P.jpg" data-fancybox="product-log-gallery-01"><img src="https://cdn.stocksnap.io/img-thumbs/960w/8EJ9RGJB5P.jpg" alt=""></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-product-log">
+                    <div class="log__user-avatar"><img src="https://cdn.stocksnap.io/img-thumbs/280h/6FMI2J6JKC.jpg" alt=""></div>
+                    <div class="log__main-content">
+                      <div class="log__user-info">
+                        <span class="log__user-info__title">Lê Đại Dương</span>
+                        <span>-</span>
+                        <span class="log__user-info__meta">08/10/2018, 11:30:30</span>
+                      </div>
+                      <div class="log__meta-info">
+                        <i class="info-icon ion-location"></i>
+                        <div class="info-data">Địa chỉ: Sô 12, ngõ 12, đường Giải Phóng, quận Đống Đa, TP. Hà Nội</div>
+                      </div>
+                      <div class="log__data">
+                        <div class="single-data"><u>Công việc:</u> Thu hoạch cây trồng</div>
+                        <div class="single-data"><u>Chi tiết:</u> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ht-loading-section"></div>
+                <div class="mt-4">
+                  <div class="text-center"><a href="#" class="btn-see-more btn">Xem thêm nhật ký</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Site Content -->
+      <!-- Site Footer -->
+      <footer class="site-footer">
+      </footer>
+      <!-- END Site Footer -->
+    </div>
+    <div id="Modal__TitleTemplates" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close h-mr-1" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="modal-body">
+            <div class="c-title-templates">
+
+              <div class="panel-group" id="Accordion__TitleTemplates" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#Accordion__TitleTemplates" href="#Accordion__TitleTemplates-collapseOne" class="collapsed" aria-expanded="false">Trồng trọt<i class="collapse-icon ion-chevron-down"></i></a>
+                    </h4>
+                  </div>
+                  <div id="Accordion__TitleTemplates-collapseOne" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                      <ul class="c-list-title-templates list-unstyled">
+                        <li class="single-title"><a href="#" class="single-title__link">Tham gia tập huấn trồng trọt</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Chế biến tập huấn thực phẩm</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Aliquam tincidunt mauris eu risus.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Vestibulum auctor dapibus neque.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Nunc dignissim risus id metus.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Cras ornare tristique elit.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Vivamus vestibulum ntulla nec ante.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Praesent placerat risus quis eros.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Fusce pellentesque suscipit nibh.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Integer vitae libero ac risus egestas placerat.</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#Accordion__TitleTemplates" href="#Accordion__TitleTemplates-collapseTwo" class="collapsed" aria-expanded="false">Chăn nuôi<i class="collapse-icon ion-chevron-down"></i></a>
+                    </h4>
+                  </div>
+                  <div id="Accordion__TitleTemplates-collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <ul class="c-list-title-templates list-unstyled">
+                        <li class="single-title"><a href="#" class="single-title__link">Chăn nuôi 01</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Aliquam tincidunt mauris eu risus.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Vestibulum auctor dapibus neque.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Nunc dignissim risus id metus.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Cras ornare tristique elit.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Vivamus vestibulum ntulla nec ante.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Praesent placerat risus quis eros.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Fusce pellentesque suscipit nibh.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Integer vitae libero ac risus egestas placerat.</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#Accordion__TitleTemplates" href="#Accordion__TitleTemplates-collapseThree" class="collapsed" aria-expanded="false">Thủy hải sản<i class="collapse-icon ion-chevron-down"></i></a>
+                    </h4>
+                  </div>
+                  <div id="Accordion__TitleTemplates-collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <ul class="c-list-title-templates list-unstyled">
+                        <li class="single-title"><a href="#" class="single-title__link">Chăn nuôi 01</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Aliquam tincidunt mauris eu risus.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Vestibulum auctor dapibus neque.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Nunc dignissim risus id metus.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Cras ornare tristique elit.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Vivamus vestibulum ntulla nec ante.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Praesent placerat risus quis eros.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Fusce pellentesque suscipit nibh.</a></li>
+                        <li class="single-title"><a href="#" class="single-title__link">Integer vitae libero ac risus egestas placerat.</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Modal__ProductSearch" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close h-mr-1" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="modal-header">
+            <h3 class="mt-0">Mã truy xuất liên quan</h3>
+          </div>
+          <div class="modal-body">
+            <div class="search-form">
+              <div class="search-form__input-wrapper">
+                <input type="#" class="search-input form-control input-lg" placeholder="Tìm sản phẩm theo tên hoặc mã">
+                <!-- <i class="search-icon ion-search"></i> -->
+              </div>
+            </div>
+            <div class="list-product-info mt-2">
+              <div class="single-product-info">
+                <div class="info__content">
+                  <div class="info-title">Tên sản phẩm</div>
+                  <div class="info-subtitle">Mã: 204t0sd9fi0</div>
+                </div>
+                <div class="info__action">
+                  <label class="my-0" class="action-check">
+                    <input type="checkbox" class="action-check__input hidden">
+                    <span class="action-check__icon"><i class="ion-checkmark-round"></i></span>
+                  </label>
+                </div>
+              </div>
+              <div class="single-product-info">
+                <div class="info__content">
+                  <div class="info-title">Tên sản phẩm</div>
+                  <div class="info-subtitle">Mã: 204t0sd9fi0</div>
+                </div>
+                <div class="info__action">
+                  <label class="my-0" class="action-check">
+                    <input type="checkbox" class="action-check__input hidden">
+                    <span class="action-check__icon"><i class="ion-checkmark-round"></i></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn btn-primary btn-lg btn-block">Thêm</a>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div id="Modal__SelectUsers" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close h-mr-1" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="modal-body">
+            <div class="search-form">
+              <div class="search-form__input-wrapper">
+                <input type="#" class="search-input form-control input-lg" placeholder="Tìm thành viên">
+                <!-- <i class="search-icon ion-search"></i> -->
+              </div>
+            </div>
+            <div class="l-list-users l-list-users--in-modal">
+              <div class="single-user">
+                <div class="single-user__link" data-toggle="modal">
+                  <div class="single-user__avatar">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                  </div>
+                  <div class="single-user__info">
+                    <div class="single-user__title">HTX Thành Thái</div>
+                    <div class="single-user__subtitle">Quản lý vùng nguyên liệu</div>
+                  </div>
+                  <label class="my-0" class="action-check">
+                    <input type="checkbox" class="action-check__input hidden">
+                    <span class="action-check__icon"><i class="ion-checkmark-round"></i></span>
+                  </label>
+                </div>
+              </div>
+              <div class="single-user">
+                <div class="single-user__link">
+                  <div class="single-user__avatar">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/sdw/128.jpg" alt="">
+                  </div>
+                  <div class="single-user__info">
+                    <div class="single-user__title">HTX Thành Thái</div>
+                    <div class="single-user__subtitle">Quản lý vùng nguyên liệu</div>
+                  </div>
+                  <label class="my-0" class="action-check">
+                    <input type="checkbox" class="action-check__input hidden">
+                    <span class="action-check__icon"><i class="ion-checkmark-round"></i></span>
+                  </label>
+                </div>
+              </div>
+              <div class="single-user">
+                <div class="single-user__link">
+                  <div class="single-user__avatar">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/ekvium/128.jpg" alt="">
+                  </div>
+                  <div class="single-user__info">
+                    <div class="single-user__title">HTX Thành Thái HTX Thành Thái HTX Thành Thái HTX Thành Thái</div>
+                    <div class="single-user__subtitle">Quản lý vùng nguyên liệu Quản lý vùng nguyên liệu Quản lý vùng nguyên liệu</div>
+                  </div>
+                  <label class="my-0" class="action-check">
+                    <input type="checkbox" class="action-check__input hidden">
+                    <span class="action-check__icon"><i class="ion-checkmark-round"></i></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-primary btn-lg btn-block">Thêm</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- JS -->
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/libs/slick/slick.js"></script>
+    <!-- Theme Script -->
+    <script src="assets/js/main.js"></script>
+    <script></script>
+  </body>
+</html>

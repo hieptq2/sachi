@@ -1,0 +1,55 @@
+-----------
+
+
+menu
+. - menu rút gọn button có 3 gạch ở các trang khác home trên mobile
+. - thu gọn menu ở các trang các home trên pc
+. - thêm đủ 10 trang con ở menu
+
+chân trang
+. - bỏ các menu danh mục, giữ phần liên hệ
+
+
+
+-----------
+
+
+1 giới thiệu
+- nội dung như đã gửi
+
+2 sản phẩm
+. - thêm nút xem thêm dưới từng mục
+
+3 nhà máy
+- như cũ
+
+4 vùng trồng
+- tách riêng nhật ký, bản đồ vùng trồng và danh sách hộ trồng, có xem thêm
+
+5 kĩ thuật
+- dạng bài viết như tin tức
+
+6 vật tư
+- Sửa lại thành 2 phần
+  mỗi phần gồm: tiêu đề, giưới thiệu, slide và xem thêm
+
+7 cây giống
+- dạng bài viết như tin tức
+
+8 chứng nhận
+- dạng bài viết như tin tức
+
+9 hợp tác
+- dạng bài viết như tin tức
+
+10 tin tức
+- như cũ
+
+11 trang chủ
+. - dưới mỗi mục có Xem Thêm
+. - nhà máy -> single video thay cho slide
+. - thêm mục kĩ thuật ngay trên vật tư ở trang chủ 
+(giống slide tin tức của mediwhite), ngay dưới chữ kĩ thuật có đoạn mô tả
+
+12 trang bài viết (chi tiết): như cũ
+. sửa video cho responsive

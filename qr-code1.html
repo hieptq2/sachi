@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>3x5 | Sachi Tay Nguyen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Favicon -->
+  <!-- <link rel="shortcut icon" href="assets/img/favicon.ico"> -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/libs/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/libs/slick/slick.css">
+  <!-- Theme Styles -->
+  <link href="assets/css/main.css?v=1905" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="site-wrapper">
+   <!-- Site Header -->
+    <header id="siteHeader" class="site-header site-header--minimal">
+      <div class="site-header__wrapper-bg h-bg-cover" style="background-image: url('assets/img/sachi-02.jpg');">
+        <div class="site-header__wrapper-opacity">
+          <div class="container">
+            <div class="site-header__top">
+              <div class="site-header__logo">
+                <a href="#"><img src="assets/img/logo.png" alt="Sachi Logo"></a>
+              </div>
+              <div class="site-header__toggle hidden-sm hidden-md hidden-lg">
+                <a href="#" class="btn-toggle-list-nav js-btn-toggle-list-nav"><i class="ion-navicon"></i></a>
+              </div>
+            </div>
+            <div class="site-header__nav js-site-header__nav">
+              <ul class="list-header-nav ">
+                <li><a href="#">Giới thiệu</a></li>
+                <li class="item-empty"></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Nhà máy</a></li>
+                <li class="item-empty"></li>
+                <li><a href="#">Vùng trồng</a></li>
+                <li><a href="#">Kỹ thuật</a></li>
+                <li><a href="#">Vật tư</a></li>
+                <li><a href="#">Cây giống</a></li>
+                <li><a href="#">Chứng nhận</a></li>
+                <li><a href="#">Hợp tác</a></li>
+                <li><a href="#">Tin tức</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END Site Header -->
+      
+    <!-- Site Content -->
+    <div class="site-content">
+      <div class="breadcrumb-wrapper">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Danh mục sản phẩm</a></li>
+            <li><a href="#">Tên sản phẩm</a></li>
+            <li class="active">Mã QR</li>
+          </ol>
+        </div>
+      </div>
+      <div class="container">
+        <div class="qr-code__size-options">
+          <div class="row">
+            <div class="col-xs-6">
+              <div id="Dropdown__QRcode-Lang" class="dropdown">
+                <div class="size-options__label">Ngôn ngữ:</div>
+                <a href="" class="btn btn-primary btn-lg btn-block size-label" data-toggle="dropdown">
+                  <span class="size-label__text">Tiếng Việt</span>
+                  <i class="size-label__icon ion-ios-arrow-down h-ml-1"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="single-size-option">Tiếng Việt</a></li>
+                  <li><a href="#" class="single-size-option">English</a></li>
+                </ul> 
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div id="Dropdown__QRcode-Size" class="dropdown">
+                <div class="size-options__label">Cỡ tem:</div>
+                <a href="" class="btn btn-primary btn-lg btn-block size-label" data-toggle="dropdown">
+                  <span class="size-label__text">2cm x 2cm</span>
+                  <i class="size-label__icon ion-ios-arrow-down h-ml-1"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="single-size-option" data-size-label="2x2">2cm x 2cm</a></li>
+                  <li><a href="#" class="single-size-option" data-size-label="3x3">3cm x 3cm</a></li>
+                  <li><a href="#" class="single-size-option" data-size-label="2-5x4">2,5cm x 4cm</a></li>
+                  <li><a href="#" class="single-size-option" data-size-label="4x2-5">4cm x 2,5cm</a></li>
+                  <li><a href="#" class="single-size-option" data-size-label="3x5">3cm x 5cm</a></li>
+                  <li><a href="#" class="single-size-option" data-size-label="5x3">5cm x 3cm</a></li>
+                  <li><a href="#" class="single-size-option" data-size-label="4x6">4cm x 6cm</a></li>
+                  <li><a href="#" class="single-size-option" data-size-label="6x4">6cm x 4cm</a></li>
+                  <li><a href="#" class="single-size-option" data-size-label="5x10">5cm x 10cm</a></li>
+                  <li><a href="#" class="single-size-option" data-size-label="10x5">10cm x 5cm</a></li>
+                </ul> 
+              </div>
+            </div>
+          </div>
+              
+        </div>
+        <div id="QRcode--Product" class="c-product-qr c-product-qr--2x2">
+          
+          <div class="qr-code__wrapper">
+            <div class="qr-code__image">
+              <img src="https://previews.123rf.com/images/foxindustry/foxindustry1310/foxindustry131000005/23317476-sample-qr-code-ready-to-scan-with-smart-phone.jpg" alt="">
+            </div>
+            <div class="qr-code__content">
+              <div class="qr-code__title">Tên doanh nghiệp sở hữu Tên doanh nghiệp sở hữu Tên doanh nghiệp sở hữu</div>
+              <div class="qr-code__product-title">Tên sản phẩm Hạt Saca Inchi Tên sản phẩm Hạt Saca Inchi Tên sản phẩm Hạt Saca Inchi</div>
+              <div class="qr-code__product-code">OGC019234398</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center pb-4">
+          <a href="#" class="btn btn-primary btn-lg"><i class="ion-android-download h-mr-2"></i>Tải về máy</a>
+        </div>
+      </div>
+    </div>
+    <!-- END Site Content -->
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="site-footer__info">
+        <div class="container">
+          <div class="footer-copyright">
+            <span>Công ty cổ phần thương mại Sachi Tây Nguyên</span>
+            <span>Nhà máy tại: Thôn Đức An – Thuận An – ĐăkMil – Đăknong</span>
+            <span class="h-nowrap">SĐT: 094 3765 858</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Site Footer -->
+      
+  </div>
+
+
+
+  <!-- JS -->
+  <script src="assets/libs/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+  <script src="assets/libs/fancybox/jquery.fancybox.min.js"></script>
+  <script src="assets/libs/slick/slick.js"></script>
+
+  <!-- Theme Script -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#Dropdown__QRcode-Size .single-size-option').click(function(e){
+        e.preventDefault();
+        var label = $(this).attr('data-size-label');
+        var labelTitle = $(this).html();
+        console.log(label);
+        console.log(labelTitle);
+
+        $(this).parents('#Dropdown__QRcode-Size').find('.size-label__text').html(labelTitle);
+        $('#QRcode--Product').attr('class', '');
+        $('#QRcode--Product').addClass('c-product-qr c-product-qr--' + label);
+      })
+
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+.l-main{
+	padding: 0 8px;
+}
+
+.l-searchbar{
+	padding: 0 0 24px;
+	margin: 0 0 24px;
+	border-bottom: 1px solid $grey200;
+	.form-group{
+		position: relative;
+		margin: 0;
+	}
+	.form-control{
+		height: 48px;
+		line-height: 46px;
+		padding: 0 64px 0 24px;
+		font-size: 16px;
+		border-radius: 999px;
+		border: 1px solid $grey200;
+		box-shadow: 0 1px 4px 0 rgba(#000, .08);
+		&:focus{
+			outline: none;
+			box-shadow: 0 1px 6px 0 rgba(#000, .2);
+			border-color: transparent;
+		}
+	}
+	.search-submit{
+		@extend %button-reset;
+		display: block;
+		position: absolute;
+		top: 0; right: 0;
+		margin: 0;
+		height: 48px;
+		line-height: 48px;
+		width: 56px;
+		font-size: 24px;
+		text-align: center;
+		color: #fff;
+		background-color: material-color('blue','500');
+		border-radius: 0 999px 999px 0;
+	}
+}
+
+.l-list-products{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px 0 0;
+	.c-card{
+		width: calc(50% - 16px);
+		margin: 0 16px 16px 0;
+		@media (min-width: 992px){
+			width: calc(33.33% - 16px);
+		}
+		@media (min-width: 992px){
+			width: calc(25% - 16px);
+		}
+	}
+}
+.l-related-keyword{
+	margin: 48px 8px 0;
+	&__title{
+		margin: 0;
+		line-height: 1.375;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	&__list{
+		margin: 16px 0 0;
+	}
+}
+
+.c-navtabs{
+	display: flex;
+	align-items: center;
+	
+	margin: 24px 0;
+	padding: 0;
+	font-size: 0;
+	white-space: nowrap;
+	overflow: auto;
+	border-radius: 999px;
+	box-shadow: 0 1px 5px 0 rgba(#000,.12);
+	.nav-item{
+		flex: 1 0;
+		&__link{
+			display: block;
+			padding: 10px 4px;
+			line-height: 20px;
+			font-size: 14px;
+			font-weight: 600;
+			color: $grey700;
+			text-align: center;
+			background-color: #fff;
+			@media (min-width: 992px){
+				padding: 16px 12px;
+			}
+			&:hover,
+			&:focus,
+			&:active{
+				text-decoration: none;
+			}
+		}
+
+		&.active{
+			.nav-item__link{
+				color: #fff;
+				background-color: $color-s;
+			}
+		}
+		&__icon{
+			line-height: 32px;
+			font-size: 24px;
+			@media (min-width: 992px){
+				line-height: 48px;
+				font-size: 36px;
+			}
+		}
+		&__label{
+			font-size: 12px;
+			font-weight: 600;
+			@media (min-width: 992px){
+				font-size: 14px;
+			}
+		}
+		&:first-child{
+			.nav-item{
+				&__link{
+					border-radius: 999px 0 0 999px;
+				}
+			}
+		}
+		&:last-child{
+			.nav-item{
+				&__link{
+					border-radius: 0 16px 16px 0;
+				}
+			}
+		}
+	}
+}
+
+.c-card{
+	margin: 16px 0;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 1px 5px 0 rgba(#000,.16);
+	&--partner{
+		padding: 0;
+		.partner{
+			//xx
+			&-link{
+				display: block;
+				padding: 16px;
+				color: $grey800;
+				@include transition(background-color .1s ease-in-out);
+				&:hover{
+					text-decoration: none;
+					background-color: $grey100;
+				}
+			}
+			&-title{
+				margin: 0;
+				font-size: 18px;
+				line-height: 1.25;
+				color: material-color('blue', '700');
+			}
+			&-excerpt{
+				margin: 8px 0 0;
+				font-size: 14px;
+				line-height: 20px;
+				color: $grey700;
+				@include multi-line-ellipsis(20px, 3, false);
+			}
+			&-url{
+				margin: 4px 0 0;
+				font-size: 14px;
+				line-height: 1.25;
+				color: $color-m;
+			}
+		}
+	}
+	&--product2{
+		overflow: hidden;
+		.product{
+			&-link{
+				display: block;
+				text-align: center;
+				height: 100%;
+				&:hover{
+					text-decoration: none;
+					background-color: $grey100;
+				}
+			}
+			&-content{
+				padding: 12px;
+			}
+			&-title{
+				margin: 0;
+				line-height: 20px;
+				max-height: 40px;
+				font-size: 16px;
+				font-weight: 400;
+				overflow: hidden;
+				color: $grey900;
+				@media (min-width: 992px){
+					font-size: 18px;
+					line-height: 23px;
+					max-height: 46px;
+				}
+			}
+			&-subtitle{
+				margin: 6px 0 0;
+				font-size: 14px;
+				font-weight: 400;
+				color: $grey600;
+			}
+		}
+	}
+}
+
+.c-list-keywords{
+	li{
+		border-bottom: 1px solid $grey200;
+		&:first-child{
+			border-top: 1px solid $grey200;
+		}
+		a{
+			position: relative;
+			padding: 8px 8px 8px 36px;
+			display: block;
+			line-height: 24px;
+			font-size: 16px;
+			color: $color-m;
+			@include transition(background-color .1s ease-in-out);
+			&:before{
+				@extend %mdi-icon;
+				content: "\F349";
+				display: block;
+				position: absolute;
+				top: 8px;
+				left: 8px;
+				font-size: 18px;
+				color: $grey500;
+			}
+			&:hover{
+				background-color: $grey50;
+			}
+		}
+	}
+}
+
+
+.c-seemore{
+	margin: 24px 0;
+	text-align: center;
+}
